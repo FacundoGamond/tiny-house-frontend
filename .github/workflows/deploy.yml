@@ -15,12 +15,14 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }} # Password
           script: |
             cd ..
-            cd home/tiny-house/tiny-house-backend/nomos-web 
+            cd home/tiny-house/tiny-house-frontend 
             git pull
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
             pm2 delete "Nomos Web"
             npm install
             ng build --prod
+            cd ..
+            cp -R tiny-house-frontend/dist/Nomos-Web/* tiny-house-backend/client
             
             
