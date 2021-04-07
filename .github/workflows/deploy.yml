@@ -24,7 +24,7 @@ jobs:
             ng build --prod
             cd ..
             cp -R tiny-house-frontend/dist/Nomos-Web/* tiny-house-backend/client
-            cd home/tiny-house/tiny-house-backend
+            cd tiny-house-backend
             pm2 start server.js --name "Nomos Web"
             
             
