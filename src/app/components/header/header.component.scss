@@ -1,0 +1,39 @@
+@import '../../../assets/scss/vars';
+
+.c-navbar{
+    padding: 30px 0;
+    background-color: $white;
+
+    &__container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        img{
+            max-height: 80px;
+        }
+    }
+
+    &__nav{
+        display: block;
+
+        &-item{
+            display: inline-block;
+            margin-right: 30px;
+
+            a{
+                color: map-get($font-colors, 'primary' );
+                text-decoration: none;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+
+            &:last-child{
+                margin: initial;
+            }
+        }
+    }
+}

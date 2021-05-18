@@ -1,0 +1,14 @@
+@import '../../../assets/scss/vars';
+
+.c-pre-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    padding: 20px 0;
+
+    &__title{
+        text-transform: uppercase;
+        color: $white;
+    }
+}

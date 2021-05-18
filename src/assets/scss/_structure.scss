@@ -1,0 +1,13 @@
+.container{
+    max-width: $xl;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @media (max-width: $l) {
+        max-width: $sl;
+    }
+
+    @media (max-width: $sl) {
+        max-width: initial;
+    }
+}
