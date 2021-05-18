@@ -16,3 +16,15 @@ $sl: 992px;
 $md: 768px;
 $sm: 576px;
 
+//Fonts
+@font-face {
+    font-family: 'Gotam-Black';
+    src: url('../fonts/Gotham-Ultra.otf');
+    src: url('../fonts/Gotham-Black.otf');
+    src: url('../fonts/Gotham-Medium.otf');
+    src: url('../fonts/Gotham-Book.otf');
+    src: url('../fonts/Gotham-Light.otf');
+    //src: url('../fonts/Gotham-Thin.otf');
+}
+
+$font: 'Gotam-Black';

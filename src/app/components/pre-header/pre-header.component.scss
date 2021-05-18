@@ -10,5 +10,7 @@
     &__title{
         text-transform: uppercase;
         color: $white;
+        font-family: $font;
+        font-weight: 700;
     }
 }
