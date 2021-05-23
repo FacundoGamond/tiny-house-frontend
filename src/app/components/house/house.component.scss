@@ -1,0 +1,12 @@
+@import '../../../assets/scss/vars';
+
+.c-house{
+    display: none;
+    &__logo{
+        aspect-ratio: 1/1;
+        width: 58px;
+        border-radius: 100%;
+        border: 5px solid $secondary;
+        overflow: hidden;
+    }
+}

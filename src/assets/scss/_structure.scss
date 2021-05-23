@@ -1,10 +1,11 @@
 .container{
     max-width: $xl;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 41px;
 
     @media (max-width: $l) {
         max-width: $sl;
+        padding: 0 30px;
     }
 
     @media (max-width: $sl) {

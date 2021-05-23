@@ -1,16 +1,21 @@
 //Colors
 $black: #000;
 $white: #fff;
+$primary: #425461;
+$secondary: #495561;
+$brown: #B9A292;
+$dark-brown: #806B5A;
+$darkest-brown: #3C2716;
 
-//Colors
-$font-colors:(
-    'primary': #444,
-    'secondary': yellow,
-    'tertiary': blue
+$font-weights: ('light': 300,
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
 );
 
+
 //Breakpoits
-$xl: 1282px;
+$xl: 1240px;
 $l: 1080px;
 $sl: 992px;
 $md: 768px;
@@ -18,13 +23,13 @@ $sm: 576px;
 
 //Fonts
 @font-face {
-    font-family: 'Gotam-Black';
-    src: url('../fonts/Gotham-Ultra.otf');
-    src: url('../fonts/Gotham-Black.otf');
-    src: url('../fonts/Gotham-Medium.otf');
-    src: url('../fonts/Gotham-Book.otf');
-    src: url('../fonts/Gotham-Light.otf');
-    //src: url('../fonts/Gotham-Thin.otf');
+  font-family: 'Gotam-Black';
+  src: url('../fonts/Gotham-Ultra.otf');
+  src: url('../fonts/Gotham-Black.otf');
+  src: url('../fonts/Gotham-Medium.otf');
+  src: url('../fonts/Gotham-Book.otf');
+  src: url('../fonts/Gotham-Light.otf');
+  //src: url('../fonts/Gotham-Thin.otf');
 }
 
 $font: 'Gotam-Black';

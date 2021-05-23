@@ -1,16 +1,24 @@
 <header>
-    <section class="c-navbar">
+    <section class="c-navbar navbar">
         <div class="c-navbar__container container">
 
             <a href="/" class="c-navbar__logo">
-                <img src="../../../assets/img/logo.png" alt="Logo">
+                <img src="../../../assets/img/logos/logo.png" alt="Nomos Logo" class="logo">
             </a>
 
-            <ul class="c-navbar__nav">
-                <li class="c-navbar__nav-item"><a href="#">Home</a></li>
-                <li class="c-navbar__nav-item"><a href="#">About Us</a></li>
-                <li class="c-navbar__nav-item"><a href="#">Bulding</a></li>
-                <li class="c-navbar__nav-item"><a href="#">Contact</a></li>
+            <button class="c-navbar__hamburger" aria-expanded="false" toggler-menu (click)="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu c-navbar__menu">
+                <li class="c-navbar__menu-item"><a href="#">Nomos House</a></li>
+                <li class="c-navbar__menu-item"><a href="#">Nomos Block</a></li>
+                <li class="c-navbar__menu-item"><a href="#">Equipamiento</a></li>
+                <li class="c-navbar__menu-item"><a href="#">Construcción</a></li>
+                <li class="c-navbar__menu-item"><a href="#">Nosotros</a></li>
+                <li class="c-navbar__menu-item"><a href="#">Consultanos</a></li>
             </ul>
         </div>
     </section>
