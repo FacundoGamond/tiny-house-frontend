@@ -1,9 +1,43 @@
-<section class="c-house">
+<section class="c-house component">
 
     <div class="c-house__container container">
 
-        <div class="c-house__logo">
-            <img src="../../../assets/img/icons/o.svg" alt="logo">
+        <div class="c-house__logo logo-rotator"></div>
+
+        <div class="c-house__description">
+            <p>
+                Presentamos un nuevo concepto de viviendas móviles que busca romper con la idea de pensar al 
+                hogar como algo fijo.
+            </p>
+
+            <p>
+                Nos mueve el deseo de vivir nuevas experiencias, explorar territorios desconocidos, 
+                contemplar atardeceres únicos, y expandir nuestros horizontes.
+            </p>
+
+        </div>
+
+        <img class="c-house__picture" src="../../../assets/img/pictures/house.png" alt="house">
+
+        <div class="c-house__description">
+            <p>
+                Nomos House es una vivienda modular transportable, construída con una estructura inalterable íntegramente de acero y apta para cualquier clima o contexto.<br>
+                Autosuficientes, Eco Friendly y equipadas con lo último en tecnología y diseño para brindarte el máximo confort a donde quiera que vayas.
+            </p>
+
+            <p>
+                Diseñadas para uso residencial, comercial o de servicio según tus necesidades.<br>
+                Viviendas permanentes o de fin de semana.
+            </p>
+
+        </div>
+
+        <div class="c-house__boxes">
+
+            <div class="c-house__boxes-box" *ngFor="let box of boxes">
+                {{box}}
+            </div>
+
         </div>
 
     </div>

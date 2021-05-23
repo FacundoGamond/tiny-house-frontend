@@ -1,10 +1,16 @@
 @import '../../../assets/scss/vars';
 
-header {
+.header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: .3s all;
+
+  &.expanded{
+    position: fixed;
+    width: 100%;
+  }
 }
 
 .c-navbar {
@@ -62,7 +68,7 @@ header {
       position: absolute;
       z-index: -1;
       left: 0;
-      top: 473px;
+      top: 0;
       width: 100%;
       height: 0vh;
       overflow: hidden;

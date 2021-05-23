@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,7 +17,8 @@ import { HouseComponent } from './components/house/house.component';
     HouseComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

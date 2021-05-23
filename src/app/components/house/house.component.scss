@@ -1,12 +1,99 @@
 @import '../../../assets/scss/vars';
 
 .c-house{
-    display: none;
+    padding: 93px 0;
+    background-color: $grey;
+
+    &__container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
     &__logo{
         aspect-ratio: 1/1;
-        width: 58px;
+        width: 38px;
         border-radius: 100%;
-        border: 5px solid $secondary;
-        overflow: hidden;
+        border: 10px solid $secondary;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 2s transform;
+
+
+        &:after{
+            content: url('../../../assets/img/icons/o.svg');
+            display: block;
+            top: -28px;
+            position: absolute;
+            left: -13px;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    &__description{
+        margin-top: 54px;
+        margin-bottom: 118px;
+        max-width: 800px;
+
+        p{
+            font-size: 27px;
+            line-height: calc((40 / 27)em);
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: $font;
+            font-weight: map-get($font-weights, 'bold' );
+
+            &:first-child{
+                color: $secondary;
+            }
+
+            &:last-child{
+                color: $tertiary;
+                margin: initial;
+            }
+        }
+    }
+
+    &__picture{
+        width: 100%;
+    }
+
+    &__boxes{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        width: 100%;
+
+        @media (max-width: $l) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: $md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        &-box{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: $secondary;
+            color: $white;
+            font-family: $font;
+            font-weight: map-get($font-weights, 'bold' );
+            padding: 20px;
+            min-height: 60px;
+            text-transform: uppercase;
+            font-size: 18px;
+            transition: .3s background-color;
+
+            &:hover{
+                background-color: $tertiary;
+            }
+        }
     }
 }
