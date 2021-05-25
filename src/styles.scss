@@ -5,6 +5,11 @@
     padding: initial;
 }
 
+body{
+    width: 100wv;
+    overflow-x: hidden
+}
+
 //Import general styles
 @import './assets/scss/vars';
 @import './assets/scss/structure';
