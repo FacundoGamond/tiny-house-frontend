@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { PreHeaderComponent } from './components/pre-header/pre-header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HouseComponent } from './components/house/house.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { InvestmentComponent } from './components/investment/investment.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HouseComponent } from './components/house/house.component';
     HeaderComponent,
     PreHeaderComponent,
     HeroComponent,
-    HouseComponent
+    HouseComponent,
+    GalleryComponent,
+    InvestmentComponent
   ],
   imports: [
     BrowserModule,

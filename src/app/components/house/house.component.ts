@@ -8,18 +8,22 @@ declare const animation: any;
 })
 export class HouseComponent implements OnInit {
   public logo: any;
-  public boxes: any;
+  public arrows: any;
+  public picture: any;
 
-  constructor() {
-    this.boxes = ['transportable', 'diseño personalizable', 'sustentable', 'alta tecnologia', 'calidad constructiva']
-  }
+  constructor() {}
 
   ngOnInit(): void {
     //DOM
     this.logo = document.querySelector('.logo-rotator');
+    this.arrows = document.querySelectorAll('[arrow]');
+    this.picture = document.querySelector('[picture-slide]');
 
+    //Logo rotation
     this.rotator();
-    //animation(document.querySelector('.c-hero'));
+
+    //Image slider on mobile
+    this.slider();
   }
 
   rotator() {
@@ -28,5 +32,24 @@ export class HouseComponent implements OnInit {
       this.logo.style.transform = `rotate(${rotation}deg)`;
       rotation += 360;
     }, 6000)
+  }
+
+  slider(){
+    let click = 0;
+    this.arrows.forEach(arrow => {
+      arrow.addEventListener('click', ()=>{
+        if(arrow.getAttribute('arrow') == 'right' && click < 2){
+          click++;
+          this.picture.style.objectPosition = (click*50) + '%';
+        }
+
+        if(arrow.getAttribute('arrow') == 'left' && click > 0){
+          click--;
+          this.picture.style.objectPosition = (click*50) + '%';
+        }
+
+      });
+
+    });
   }
 }

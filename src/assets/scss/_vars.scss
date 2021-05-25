@@ -8,6 +8,7 @@ $brown: #B9A292;
 $dark-brown: #806B5A;
 $darkest-brown: #3C2716;
 $grey: #E1E1E1;
+$light-blue: #d5d0cc;
 
 $font-weights: ('light': 300,
   'regular': 400,
@@ -25,13 +26,20 @@ $sm: 576px;
 
 //Fonts
 @font-face {
-  font-family: 'Gotam-Black';
-  src: url('../fonts/Gotham-Ultra.otf');
-  src: url('../fonts/Gotham-Black.otf');
-  src: url('../fonts/Gotham-Medium.otf');
-  src: url('../fonts/Gotham-Book.otf');
-  src: url('../fonts/Gotham-Light.otf');
-  //src: url('../fonts/Gotham-Thin.otf');
+  font-family: 'Gotham-Black';
+  src: url('../fonts/Gotham-Bold.otf');
 }
 
-$font: 'Gotam-Black';
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../fonts/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../fonts/Gotham-Book.otf');
+}
+
+$font: ('bold' : 'Gotham-Bold',
+  'medium' : 'Gotham-Medium',
+  'light':'Gotham-Book');

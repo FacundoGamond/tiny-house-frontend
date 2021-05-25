@@ -56,10 +56,12 @@ export class HeaderComponent implements OnInit {
         this.toggler.classList.add('on-scroll');
         this.navbar.classList.add('on-scroll');
         this.logo.classList.add('on-scroll');
+        this.header.style.position = 'fixed';
       } else {
         this.toggler.classList.remove('on-scroll');
         this.navbar.classList.remove('on-scroll');
         this.logo.classList.remove('on-scroll');
+        this.header.style.position = 'sticky';
       }
     });
   }

@@ -45,7 +45,7 @@
   }
 
   &__title {
-    font-family: $font;
+    font-family: map-get($font, 'medium');
     font-size: 36px;
     line-height: 1.3em;
     letter-spacing: 2.7px;

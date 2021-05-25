@@ -1,6 +1,9 @@
-<section class="c-house component">
+<section class="c-house component" zum-waypoint="waypoints" down="flags.on" up="flags.off" >
 
-    <div class="c-house__container container">
+    <div class="c-house__container container" ng-class="{
+        sticky : waypoints.flags.on,
+        notSticky : waypoints.flags.off
+    }">
 
         <div class="c-house__logo logo-rotator"></div>
 
@@ -17,12 +20,39 @@
 
         </div>
 
-        <img class="c-house__picture" src="../../../assets/img/pictures/house.png" alt="house">
+        <div class="c-house__picture-wrapper">
 
-        <div class="c-house__description">
+            <img class="c-house__picture" src="../../../assets/img/pictures/house.png" alt="house" picture-slide>
+
+            <div class="c-house__picture-wrapper-right" arrow="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39.551" height="39.552" viewBox="0 0 39.551 39.552">
+                    <defs>
+                        <style>.a{fill:#cacaca;}.b{fill:#495561;}</style>
+                    </defs>
+                    <g transform="translate(-1337.1 -229.16)">
+                        <circle class="a" cx="19.776" cy="19.776" r="19.776" transform="translate(1337.1 229.16)"/>
+                        <path class="b" d="M1364.327,249.1l-4.321,6.7h-5.1l2.7-4.7h-7.371v-4.023h7.345L1354.9,242.4h5.1Z"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="c-house__picture-wrapper-left" arrow="left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39.551" height="39.552" viewBox="0 0 39.551 39.552">
+                    <defs>
+                        <style>.a{fill:#cacaca;}.b{fill:#495561;}</style>
+                    </defs>
+                    <g transform="translate(-1337.1 -229.16)">
+                        <circle class="a" cx="19.776" cy="19.776" r="19.776" transform="translate(1337.1 229.16)"/>
+                        <path class="b" d="M1364.327,249.1l-4.321,6.7h-5.1l2.7-4.7h-7.371v-4.023h7.345L1354.9,242.4h5.1Z"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="c-house__description c-house__description--blue">
             <p>
-                Nomos House es una vivienda modular transportable, construída con una estructura inalterable íntegramente de acero y apta para cualquier clima o contexto.<br>
-                Autosuficientes, Eco Friendly y equipadas con lo último en tecnología y diseño para brindarte el máximo confort a donde quiera que vayas.
+                Nomos House es una vivienda modular transportable, construída con una <strong>estructura inalterable</strong> íntegramente de <strong>acero</strong> y apta para <strong>cualquier clima</strong> o contexto.<br>
+                Autosuficientes, <strong>Eco Friendly</strong> y equipadas con lo último en <strong>tecnología</strong> y diseño para brindarte el máximo confort a donde quiera que vayas.
             </p>
 
             <p>
@@ -30,13 +60,7 @@
                 Viviendas permanentes o de fin de semana.
             </p>
 
-        </div>
-
-        <div class="c-house__boxes">
-
-            <div class="c-house__boxes-box" *ngFor="let box of boxes">
-                {{box}}
-            </div>
+            <p><strong>Componibles y Modulares.</strong></p>
 
         </div>
 
