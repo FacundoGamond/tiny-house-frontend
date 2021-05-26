@@ -76,7 +76,8 @@
       transition: .3s all;
       column-gap: 30px;
       background-color: $primary;
-      padding-right: inherit;
+      padding-left: initial;
+      padding-right: initial;
     }
 
     //Expand attr working (mobile)

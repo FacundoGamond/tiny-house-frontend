@@ -1,13 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 //Reset
-*{
-    margin: initial;
-    padding: initial;
+* {
+  margin: initial;
+  padding: initial;
 }
 
-body{
-    width: 100wv;
-    overflow-x: hidden
+body {
+  width: 100wv;
+  overflow-x: hidden
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 //Import general styles
