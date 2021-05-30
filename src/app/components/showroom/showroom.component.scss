@@ -1,37 +1,83 @@
 @import '../../../assets/scss/vars';
 
-.c-showroom{
-    padding: 85px 0;
+.c-showroom {
+  padding: 85px 0;
 
-    &__container{
-        background-image: url('../../../assets/img/pictures/Rectángulo\ 100.png');
-        background-size: cover;
-        background-position: center;
-        padding: 30px;
-        max-height: 600px;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
+  @media (max-width: $md) {
+    padding: 40px 0;
+  }
+
+  &__container {
+    background-image: url('../../../assets/img/pictures/Rectángulo\ 100.png');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 92px;
+    max-height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    @media (max-width: $md) {
+      padding: 20px;
+    }
+  }
+
+  &__content {
+    max-width: 50%;
+    width: 370px;
+
+    @media (max-width: $l) {
+      width: 100%;
+      max-width: initial;
+      margin-bottom: 30px;
+      text-align: center;
     }
 
-    &__media{
-        max-height: 500px;
-        aspect-ratio: 1/1;
-        padding: 20px;
-        border: 1px solid $white;
-        border-radius: 100%;
-        transform: scale(1.2);
+    &-title {
+      font-family: map-get($font, 'bold');
+      font-size: 60px;
+      color: $white;
+      text-transform: uppercase;
+      line-height: 1em;
+      margin-bottom: 15px;
 
-        img{
-            height: 100%;
-            border-radius: 100%;
-            width: 100%;
-            object-position: center;
-            object-fit: cover;
-            transform: scale(0.9);
-        }
+      @media (max-width: $md) {
+        font-size: 35px;
+      }
     }
+
+    &-copy {
+      font-family: map-get($font, 'medium');
+      font-size: 20px;
+      color: $white;
+
+      @media (max-width: $md) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__media {
+    max-width: 50%;
+    padding: 20px;
+    border: 1px solid $white;
+    border-radius: 100%;
+    transform: scale(1.2);
+
+    @media (max-width: $l) {
+      width: 100%;
+      max-width: initial;
+    }
+
+    img {
+      border-radius: 100%;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+      transform: scale(0.9);
+    }
+  }
 
 }
