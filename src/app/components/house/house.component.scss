@@ -3,6 +3,7 @@
 .c-house {
   padding: 93px 0;
   background-color: $grey;
+  @extend .scroll-space;
 
   @media (max-width: $md) {
       padding: 50px 0;

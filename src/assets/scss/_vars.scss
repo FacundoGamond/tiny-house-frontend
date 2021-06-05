@@ -43,3 +43,9 @@ $sm: 576px;
 $font: ('bold' : 'Gotham-Bold',
   'medium' : 'Gotham-Medium',
   'light':'Gotham-Book');
+
+
+.scroll-space{
+  scroll-margin-top: 101px;
+  scroll-snap-type: mandatory;
+}
