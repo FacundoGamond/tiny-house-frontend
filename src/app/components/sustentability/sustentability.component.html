@@ -10,15 +10,17 @@
 
         </div>
 
-        <p class="c-sustentability__copy">Viviendas pensadas para generar el menor impacto ecológico posible, mediante el uso eficiente de los recursos energéticos y la correcta gestión de residuos.</p>
+        <p class="c-sustentability__copy">Viviendas pensadas para generar el <strong>menor impacto ecológico posible</strong>, mediante el uso eficiente de los recursos energéticos y la correcta gestión de residuos.</p>
 
-        <ngx-slick-carousel class="carousel" 
+        <ngx-slick-carousel class="c-sustentability__slider" 
                         #slickModal="slick-carousel" 
                         [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                <img src="{{ slide.img }}" alt="" width="100%">
-                <h5>{{slide.title}}</h5>
-                <p>{{slide.copy}}</p>
+                <div class="c-sustentability__slide">
+                    <img class="c-sustentability__slide-img" src="{{ slide.img }}" alt="">
+                    <h5 class="c-sustentability__slide-title">{{slide.title}}</h5>
+                    <p class="c-sustentability__slide-copy">{{slide.copy}}</p>
+                </div>
             </div>
         </ngx-slick-carousel>
 
