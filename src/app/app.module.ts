@@ -10,8 +10,6 @@ import { HouseComponent } from './components/house/house.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { InvestmentComponent } from './components/investment/investment.component';
 import { ShowroomComponent } from './components/showroom/showroom.component';
-import { SustainabilityComponent } from './components/sustainability/sustainability.component';
-
 
 @NgModule({
   declarations: [
@@ -22,8 +20,7 @@ import { SustainabilityComponent } from './components/sustainability/sustainabil
     HouseComponent,
     GalleryComponent,
     InvestmentComponent,
-    ShowroomComponent,
-    SustainabilityComponent
+    ShowroomComponent
   ],
   imports: [
     BrowserModule,

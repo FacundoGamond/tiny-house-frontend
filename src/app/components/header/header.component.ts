@@ -25,12 +25,12 @@ export class HeaderComponent implements OnInit {
     this.onScrollNavbar();
   }
 
-  openMenu(onLinkClick = false) {
+  openMenu() {
     const brandingHeight = document.querySelector('.c-navbar').clientHeight;
-
+    
     this.menu.style.paddingTop = brandingHeight + 'px';
 
-    if (this.toggler.getAttribute('aria-expanded') == 'false' && !onLinkClick) {
+    if (this.toggler.getAttribute('aria-expanded') == 'false') {
 
       this.menu.setAttribute('aria-expanded', 'true');
 

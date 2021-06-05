@@ -2,12 +2,6 @@
 
 .c-showroom {
   padding: 85px 0;
-  scroll-margin-top: 101px;
-  scroll-snap-type: mandatory;
-
-  @media (max-width: $sm) {
-    scroll-margin-top: 87px;
-  }
 
   @media (max-width: $md) {
     padding: 40px 0;
