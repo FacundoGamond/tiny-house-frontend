@@ -26,26 +26,29 @@ export class HeaderComponent implements OnInit {
   }
 
   openMenu(linskMobile = false) {
-    const brandingHeight = document.querySelector('.c-navbar').clientHeight;
-    
-    this.menu.style.paddingTop = brandingHeight + 'px';
+    if(window.innerWidth < 1241){
 
-    if (this.toggler.getAttribute('aria-expanded') == 'false' && !linskMobile) {
-
-      this.menu.setAttribute('aria-expanded', 'true');
-
-      this.toggler.setAttribute('aria-expanded', 'true');
-
-      this.header.classList.add('expanded');
-
-    } else {
-
-      this.menu.setAttribute('aria-expanded', 'false');
-
-      this.toggler.setAttribute('aria-expanded', 'false');
-
-      this.header.classList.remove('expanded');
-
+      const brandingHeight = document.querySelector('.c-navbar').clientHeight;
+      
+      this.menu.style.paddingTop = brandingHeight + 'px';
+  
+      if (this.toggler.getAttribute('aria-expanded') == 'false' && !linskMobile) {
+  
+        this.menu.setAttribute('aria-expanded', 'true');
+  
+        this.toggler.setAttribute('aria-expanded', 'true');
+  
+        this.header.classList.add('expanded');
+  
+      } else {
+  
+        this.menu.setAttribute('aria-expanded', 'false');
+  
+        this.toggler.setAttribute('aria-expanded', 'false');
+  
+        this.header.classList.remove('expanded');
+  
+      }
     }
 
   }
