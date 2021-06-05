@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { animation } from '@angular/animations';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-showroom',
   templateUrl: './showroom.component.html',
   styleUrls: ['./showroom.component.scss']
 })
+
 export class ShowroomComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
+
+    const component = document.querySelector('.c-showroom');
+    
   }
 
 }

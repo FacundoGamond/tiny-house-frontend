@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+
 declare const animation: any;
 
 @Component({
@@ -35,5 +36,4 @@ export class HeroComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
