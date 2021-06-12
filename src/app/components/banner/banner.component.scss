@@ -1,0 +1,52 @@
+@import '../../../assets/scss/vars';
+
+.c-banner {
+  @extend .scroll-space;
+  margin-bottom: 140px;
+
+  @media (max-width: $md) {
+    margin-bottom: 85px;
+  }
+
+  @media (max-width: $sm) {
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    background-color: $secondary;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    font-family: map-get($font, 'bold');
+    font-size: 39px;
+    line-height: calc(47em / 39);
+    color: $white;
+    margin-bottom: 6px;
+
+    @media (max-width: $sm) {
+      font-size: 25px;
+      line-height: 1.1em;
+    }
+  }
+
+  &__copy {
+    font-family: map-get($font, 'light');
+    font-size: 23px;
+    line-height: calc(30em / 23);
+    color: $white;
+    max-width: 661px;
+    text-align: center;
+
+    @media (max-width: $sm) {
+      font-size: 18px;
+      line-height: 1.1em;
+    }
+  }
+
+}
