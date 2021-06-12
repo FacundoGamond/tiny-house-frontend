@@ -13,6 +13,7 @@ import { ShowroomComponent } from './components/showroom/showroom.component';
 import { SustentabilityComponent } from './components/sustentability/sustentability.component';
 import { TransportComponent } from './components/transport/transport.component';
 import { EquipmentComponent } from './components/equipment/equipment.component';
+import { BuildingComponent } from './components/building/building.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EquipmentComponent } from './components/equipment/equipment.component';
     ShowroomComponent,
     SustentabilityComponent,
     TransportComponent,
-    EquipmentComponent
+    EquipmentComponent,
+    BuildingComponent
   ],
   imports: [
     BrowserModule,
