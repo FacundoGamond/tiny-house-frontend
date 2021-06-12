@@ -2,7 +2,7 @@
 
 .c-contact {
   @extend .scroll-space;
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
 
   &__title {
     font-family: map-get($font, 'medium');
@@ -13,8 +13,8 @@
     text-align: center;
 
     @media (max-width: $md) {
-        font-size: 25px;
-      }
+      font-size: 25px;
+    }
   }
 
   &__copy {
@@ -26,8 +26,8 @@
     text-align: center;
 
     @media (max-width: $md) {
-        font-size: 18px;
-      }
+      font-size: 18px;
+    }
   }
 
   &__form {
@@ -38,6 +38,7 @@
   }
 
   &__input {
+    margin: 0 auto;
     height: 43px;
     width: 100%;
     line-height: 43px;
@@ -45,6 +46,10 @@
     margin-bottom: 16px;
     padding: 0 20px;
     border: 2px solid $grey;
+
+    @media (max-width: $md) {
+      width: 85%;
+    }
 
     &:last-child {
       margin-bottom: initial;
