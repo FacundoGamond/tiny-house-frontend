@@ -16,6 +16,7 @@ import { EquipmentComponent } from './components/equipment/equipment.component';
 import { BuildingComponent } from './components/building/building.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     EquipmentComponent,
     BuildingComponent,
     BannerComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
