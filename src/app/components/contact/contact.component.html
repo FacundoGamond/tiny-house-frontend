@@ -6,7 +6,7 @@
 
         <p class="c-contact__copy">Completá los siguientes datos y nuestros asesores se pondrán en contacto</p>
 
-        <form class="c-contact__form" action="">
+        <form class="c-contact__form" action="" id="form">
 
             <div class="actions">
 
@@ -20,10 +20,12 @@
 
             </div>
 
-            <input class="c-contact__input-submit" type="submit" value="ENVIAR">
+            <input class="c-contact__input-submit" type="submit" value="ENVIAR" (click)="submitForm()">
 
         </form>
 
     </div>
+
+    <div class="c-contact__modal"></div>
 
 </section>

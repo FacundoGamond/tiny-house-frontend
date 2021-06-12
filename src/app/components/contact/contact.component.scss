@@ -3,6 +3,11 @@
 .c-contact {
   @extend .scroll-space;
   padding-bottom: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
 
   &__title {
     font-family: map-get($font, 'medium');
@@ -68,6 +73,39 @@
       outline: none;
       background-color: $primary;
       cursor: pointer;
+    }
+  }
+
+  &__modal{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 50px;
+    max-width: 350px;
+    background-color: $grey;
+    color: $secondary;
+    font-family: map-get($font , 'medium' );
+    font-size: 25px;
+    line-height: 1.2em;
+    transition: .3s all;
+    border-radius: 40px;
+    height: max-content;
+    width: max-content;
+    border: 2ps solid $primary;
+    text-align: center;
+
+    @media (max-width: $sm) {
+      padding: 20px 10px;
+    }
+
+    &.show{
+      opacity: 1;
+      visibility: visible;
     }
   }
 
