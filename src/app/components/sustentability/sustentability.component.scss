@@ -25,15 +25,16 @@
     font-size: 60px;
     line-height: 1em;
     padding-bottom: 5px;
-    border-bottom: 5px solid $primary;
+    text-decoration: underline;
     letter-spacing: 0.3px;
 
     @media (max-width: $md) {
       font-size: 45px;
     }
 
-    @media (max-width: $md) {
+    @media (max-width: $sm) {
       font-size: 35px;
+      text-align: center;
     }
   }
 
