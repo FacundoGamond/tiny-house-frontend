@@ -11,6 +11,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { InvestmentComponent } from './components/investment/investment.component';
 import { ShowroomComponent } from './components/showroom/showroom.component';
 import { SustentabilityComponent } from './components/sustentability/sustentability.component';
+import { TransportComponent } from './components/transport/transport.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SustentabilityComponent } from './components/sustentability/sustentabil
     GalleryComponent,
     InvestmentComponent,
     ShowroomComponent,
-    SustentabilityComponent
+    SustentabilityComponent,
+    TransportComponent
   ],
   imports: [
     BrowserModule,

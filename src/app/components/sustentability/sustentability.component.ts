@@ -16,7 +16,7 @@ export class SustentabilityComponent implements OnInit {
         copy: "Equipada con artefactos eléctricos A+ (de eficiencia energética) e iluminación LED, proporcionando un importante ahorro a nivel energético y económico."
       },
       {
-        img: "../../../assets/sustentability/2.svg",
+        img: "../../../assets/sustentability/2.png",
         title: "Aislación Térmica",
         copy: "Su cobertura cuenta con doble aislación, tanto en paredes como en piso y techos. Además, gracias al doble laminado DVH de la puerta y las ventanas, la conservación de la temperatura ambiente es superior, proporcionando una excelente aislación térmica, acústica y un ahorro energético en la climatización de la vivienda."
       },
