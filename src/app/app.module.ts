@@ -15,6 +15,7 @@ import { TransportComponent } from './components/transport/transport.component';
 import { EquipmentComponent } from './components/equipment/equipment.component';
 import { BuildingComponent } from './components/building/building.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BannerComponent } from './components/banner/banner.component';
     TransportComponent,
     EquipmentComponent,
     BuildingComponent,
-    BannerComponent
+    BannerComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

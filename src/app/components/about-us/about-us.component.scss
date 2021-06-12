@@ -1,0 +1,76 @@
+@import '../../../assets/scss/vars';
+
+.c-transport {
+  @extend .scroll-space;
+  padding-bottom: 170px;
+
+  @media (max-width: $md) {
+    padding-bottom: 85px;
+  }
+
+  @media (max-width: $sm) {
+    padding-bottom: 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+
+    @media (max-width: $sm) {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-family: map-get($font, 'medium');
+    color: $primary;
+    font-size: 60px;
+    line-height: 1em;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    letter-spacing: 0.3px;
+
+    @media (max-width: $md) {
+      font-size: 45px;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+
+  &__icon-title {
+    max-width: 74px;
+
+    @media (max-width: $md) {
+      max-width: 50px;
+    }
+
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
+
+  &__copy {
+    font-family: map-get($font, 'medium');
+    color: $primary;
+    font-size: 27px;
+    line-height: calc((40 / 27)em);
+    margin-bottom: 50px;
+
+    @media (max-width: $md) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $sm) {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
