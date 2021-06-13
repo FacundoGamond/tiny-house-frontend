@@ -8,7 +8,7 @@
   padding-top: 85px;
   overflow: hidden;
   @extend .scroll-space;
-  
+
   &__image {
     display: block;
     max-width: 50%;
@@ -173,6 +173,16 @@
       font-size: 45px;
       line-height: 1.1em;
       letter-spacing: 0.23px;
+      text-decoration: none;
+
+      a {
+        color: $secondary;
+        font-family: map-get($font, 'light');
+        font-size: 45px;
+        line-height: 1.1em;
+        letter-spacing: 0.23px;
+        text-decoration: none;
+      }
 
       &:nth-child(1) {
         font-size: 32px;
@@ -185,7 +195,9 @@
 
       &:nth-child(2),
       &:nth-child(3) {
-        font-weight: bold;
+        a {
+          font-weight: bold;
+        }
       }
 
       @media (max-width: $sm) {
