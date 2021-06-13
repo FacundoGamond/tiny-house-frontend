@@ -101,6 +101,7 @@
 
     @media (max-width: $sm) {
       padding: 20px 10px;
+      max-width: 200px;
     }
 
     &.show{

@@ -38,10 +38,10 @@ export class ContactComponent implements OnInit {
     }
 
     if(name && phone && email && place){
-
+      //Prod server
       $.ajax({
         type: 'POST',
-        url: "http://localhost:7000/api/send-email",
+        url: `${window.origin}/api/send-email`,
         data: {
           name,
           phone,
