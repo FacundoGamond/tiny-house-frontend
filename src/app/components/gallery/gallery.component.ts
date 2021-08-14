@@ -31,23 +31,20 @@ export class GalleryComponent implements OnInit {
         settings: {
           centerMode: false,
           centerPadding: '0px',
-          dots: true
         }
       },
       {
         breakpoint: 600,
         settings: {
           centerMode: false,
-          centerPadding: '0px',
-          dots: true
+          centerPadding: '0px'
         }
       },
       {
         breakpoint: 480,
         settings: {
           centerMode: false,
-          centerPadding: '0px',
-          dots: true
+          centerPadding: '0px'
         }
       }
     ]

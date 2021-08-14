@@ -77,6 +77,11 @@
     flex-flow: column;
     align-items: center;
     cursor: pointer;
+    transition: .3s all;
+
+    &:hover{
+      transform: scale(0.9);
+    }
 
     &-img {
       display: block;
