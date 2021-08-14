@@ -13,6 +13,11 @@
     object-position: center;
     margin: 0 auto;
     border-radius: 50px;
+
+    @media (max-width: $md) {
+      border-radius: 20px;
+      height: 400px;
+    }
   }
 
   .carousel {
@@ -21,12 +26,12 @@
 
     /* the slides */
     .slick-slide {
-      margin: 0 27px;
+      margin: 0 30px;
     }
 
     /* the parent */
     .slick-list {
-      margin: 0 -27px;
+      margin: 0 -30px;
     }
   }
 
@@ -43,11 +48,6 @@
       cursor: pointer;
       transition: .3s all;
 
-      @media (max-width: $md) {
-        bottom: initial;
-        top: 150px;
-      }
-
       &:hover {
         transform: scale(1.1);
       }
@@ -62,9 +62,11 @@
 
       &.prev-gallery {
         left: 130px;
+
         @media (max-width: $md) {
-            left: 10px;
-          }
+          left: 10px;
+        }
+
         svg {
           transform: rotate(180deg);
         }

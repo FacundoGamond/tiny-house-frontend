@@ -18,6 +18,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SustentabilitySliderComponent } from './components/sustentability-slider/sustentability-slider.component';
+import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
+import { GalleryRendersComponent } from './components/gallery-renders/gallery-renders.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { SustentabilitySliderComponent } from './components/sustentability-slide
     BannerComponent,
     AboutUsComponent,
     ContactComponent,
-    SustentabilitySliderComponent
+    SustentabilitySliderComponent,
+    WhatsappComponent,
+    GalleryRendersComponent
   ],
   imports: [
     BrowserModule,
