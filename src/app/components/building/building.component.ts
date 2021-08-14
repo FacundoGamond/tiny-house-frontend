@@ -18,17 +18,17 @@ export class BuildingComponent implements OnInit {
         copy: "4,10 mts. Alto. 7 mts. Largo 2.60 mts. Ancho (Mismo tamaño que colectivo de dos pisos 22mt2)"
       },
       {
-        img: "../../../assets/img/pictures/2.png",
+        img: "../../../assets/sustentability/insolation/1.jpeg",
         title: "Aislación Térmica",
         copy: "Su cobertura cuenta con doble aislación, tanto en paredes como en piso y techos. Además, gracias al doble laminado DVH de la puerta y las ventanas, la conservación de la temperatura ambiente es superior, proporcionando una excelente aislación térmica, acústica y un ahorro energético en la climatización de la vivienda."
       },
       {
-        img: "../../../assets/img/pictures/3.png",
+        img: "../../../assets/sustentability/water-fix/1.jpeg",
         title: "Tratamiento de Aguas Residuales",
         copy: "Cuenta con dos tanques de 150 litros para aguas grises y negras, capacidad suficiente para conservar los residuos y hacer de ellos una correcta gestión."
       },
       {
-        img: "../../../assets/img/pictures/4.png",
+        img: "../../../assets/sustentability/solar-panels/1.jpeg",
         title: "Paneles solares",
         copy: "Cuenta con paneles solares que permiten generar energía renovable para cubrir el funcionamiento eléctrico de la vivienda."
       }

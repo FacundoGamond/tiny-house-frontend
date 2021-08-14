@@ -142,6 +142,7 @@
 
       @media (max-width: $md) {
         padding: 40px 0;
+        width: 85%;
       }
     }
 
@@ -155,6 +156,10 @@
       max-width: 326px;
       text-decoration: underline;
       text-transform: uppercase;
+
+      @media (max-width: $md) {
+        font-size: 25px;
+      }
     }
 
     &-copy {
