@@ -17,6 +17,7 @@ import { BuildingComponent } from './components/building/building.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { SustentabilitySliderComponent } from './components/sustentability-slider/sustentability-slider.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContactComponent } from './components/contact/contact.component';
     BuildingComponent,
     BannerComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    SustentabilitySliderComponent
   ],
   imports: [
     BrowserModule,

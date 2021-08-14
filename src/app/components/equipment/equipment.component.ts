@@ -14,21 +14,25 @@ export class EquipmentComponent implements OnInit {
       {
         img: "../../../assets/equipment/1.svg",
         title: "Living",
+        content:'',
         id: 1
       },
       {
         img: "../../../assets/equipment/2.svg",
         title: "Cocina y Comedor",
+        content:'',
         id: 2
       },
       {
         img: "../../../assets/equipment/3.svg",
         title: "Habitación",
+        content:'',
         id: 3
       },
       {
         img: "../../../assets/equipment/4.svg",
         title: "Baño",
+        content:'',
         id: 4
       }
     ]
