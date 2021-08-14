@@ -9,22 +9,61 @@ export class GalleryComponent implements OnInit {
   public slides: any;
   constructor() { 
     this.slides=[
-      {img: "../../../assets/img/pictures/1.png"},
-      {img: "../../../assets/img/pictures/2.png"},
-      {img: "../../../assets/img/pictures/3.png"},
-      {img: "../../../assets/img/pictures/4.png"},
-      {img: "../../../assets/img/pictures/5.png"},
-      {img: "../../../assets/img/pictures/6.png"},
+      {img: "../../../assets/gallery/1.jpeg"},
+      {img: "../../../assets/gallery/2.jpeg"},
+      {img: "../../../assets/gallery/3.jpeg"},
+      {img: "../../../assets/gallery/4.jpeg"},
+      {img: "../../../assets/gallery/5.jpeg"},
+      {img: "../../../assets/gallery/6.jpeg"},
     ]
   }
 
   slideConfig = {
     "slidesToShow": 1,
     "slidesToScroll": 1,
-    "arrows": true
+    "arrows": true,
+    centerMode: true,
+    adaptiveHeight: true,
+    centerPadding: '150px',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          centerMode: false,
+          centerPadding: '0px',
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          centerMode: false,
+          centerPadding: '0px',
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: false,
+          centerPadding: '0px',
+          dots: true
+        }
+      }
+    ]
   };
 
   ngOnInit(): void {
+  }
+
+  nextSlide(){
+    const nextSlide = $('.slick-next');
+    nextSlide.click();
+  }
+
+  prevSlide(){
+    const nextSlide = $('.slick-prev');
+    nextSlide.click();
   }
 
 }

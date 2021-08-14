@@ -13,7 +13,7 @@ export class BuildingComponent implements OnInit {
   ngOnInit(): void {
     this.slides = [
       {
-        img: "../../../assets/img/pictures/1.png",
+        img: "../../../assets/building/1.jpeg",
         title: "Medidas",
         copy: "4,10 mts. Alto. 7 mts. Largo 2.60 mts. Ancho (Mismo tamaño que colectivo de dos pisos 22mt2)"
       },
